@@ -1,3 +1,12 @@
+:root {
+  --text-color-white: #ffffff;
+  --text-color-blue: #2196f3;
+  --text-color-black: #212121;
+  --text-color-grey: #757575;
+  --bg-color-blue: #2196f3;
+  --font-weight-700: 700;
+  --font-weight-500: 500;
+}
 * {
   margin: 0;
 }
@@ -12,44 +21,36 @@ button {
 }
 body {
   font-family: "Roboto", sans-serif;
-  color: #212121;
+  color: var(--text-color-black);
   letter-spacing: 0.03em;
-}
-:root {
-  --text-color: #ffffff;
-  --bg-color-blue: #2196f3;
 }
 .logo {
   font-family: "Raleway";
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   font-size: 26px;
   line-height: 1.2;
-  color: #2196f3;
+  color: var(--text-color-blue);
 }
 .navigation_logo {
   color: #000000;
 }
 .navigation-secondary {
-  font-weight: 500;
+  font-weight: var(--font-weight-500);
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--text-color-black);
 }
-.nav-sec_p,
-.nav-sec_k {
-  color: #212121;
+.navigation-secondary:hover,
+.address:hover {
+  color: var(--text-color-blue);
 }
-.nav-sec_t:focus,
-.nav-sec_m:focus,
-.a_color:focus {
-  color: #f35221;
+.navigation-secondary:focus,
+.address:focus {
+  color: var(--text-color-blue);
 }
-.nav-sec_t {
-  color: #757575;
-}
-.main_bg {
-  background-color: #2f303a;
+.nav-sec_color {
+  color: var(--text-color-grey);
 }
 .main-primary {
   font-weight: 900;
@@ -58,21 +59,18 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--text-color);
+  color: var(--text-color-white);
+  background-color: #2f303a;
 }
 .pointer {
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: var(--font-weight-700);
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  color: var(--text-color);
+  color: var(--text-color-white);
   background: var(--bg-color-blue);
 }
 .section_lorem {
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -80,11 +78,11 @@ body {
 .sectiom_lorem_p {
   font-size: 14px;
   line-height: 1.71;
-  color: #757575;
+  color: var(--text-color-grey);
 }
 .section_work,
 .team {
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -93,54 +91,47 @@ body {
   background: #f5f4fa;
 }
 .name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  font-weight: var(--font-weight-500);
 }
+.name,
 .position {
-  font-size: 16px;
   line-height: 1.19;
-  text-align: center;
-  color: #757575;
+  color: var(--text-color-grey);
+  background: #ffffff;
 }
 .foot {
   background: #2f303a;
 }
 .foot_logo {
-  color: var(--text-color);
+  color: var(--text-color-white);
 }
 .address {
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
-  color: var(--text-color);
+  color: var(--text-color-white);
 }
-.a_color {
+.address_color {
   color: rgba(255, 255, 255, 0.6);
 }
 .projects {
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .projects_name {
-  font-size: 16px;
   line-height: 1.88;
-  color: #757575;
-}
-.all,
-.single {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
+  color: var(--text-color-grey);
 }
 .all {
-  color: var(--text-color);
-  background: var(--bg-color-blue);
-}
-.single {
+  font-weight: var(--font-weight-500);
+  line-height: 1.62;
+  text-align: center;
   background: #f5f4fa;
-  color: #212121;
+  color: var(--text-color-black);
+}
+.all:focus {
+  color: var(--text-color-white);
+  background: var(--bg-color-blue);
 }
