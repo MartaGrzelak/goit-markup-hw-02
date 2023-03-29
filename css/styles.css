@@ -3,7 +3,8 @@
   --text-color-blue: #2196f3;
   --text-color-black: #212121;
   --text-color-grey: #757575;
-  --bg-color-blue: #2196f3;
+  --bg-color-light: #2196f3;
+  --bg-color-dark: #2f303a;
   --font-weight-700: 700;
   --font-weight-500: 500;
 }
@@ -60,14 +61,14 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-color-white);
-  background-color: #2f303a;
+  background-color: var(--bg-color-dark);
 }
 .pointer {
   font-weight: var(--font-weight-700);
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--text-color-white);
-  background: var(--bg-color-blue);
+  background: var(--bg-color-light);
 }
 .section_lorem {
   font-weight: var(--font-weight-700);
@@ -133,5 +134,5 @@ body {
 }
 .all:focus {
   color: var(--text-color-white);
-  background: var(--bg-color-blue);
+  background: var(--bg-color-light);
 }
