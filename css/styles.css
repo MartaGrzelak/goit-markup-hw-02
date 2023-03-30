@@ -1,12 +1,12 @@
 :root {
-  --text-color-white: #ffffff;
-  --text-color-blue: #2196f3;
-  --text-color-black: #212121;
-  --text-color-grey: #757575;
+  --text-color-light-primary: #ffffff;
+  --text-color-light-secondary: #2196f3;
+  --text-color-dark-primary: #757575;
+  --text-color-dark-secondary: #212121;
   --bg-color-light: #2196f3;
   --bg-color-dark: #2f303a;
-  --font-weight-700: 700;
-  --font-weight-500: 500;
+  --font-weight-bold: 700;
+  --font-weight-primary: 500;
 }
 * {
   margin: 0;
@@ -22,36 +22,36 @@ button {
 }
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--text-color-black);
+  color: var(--text-color-dark-secondary);
   letter-spacing: 0.03em;
 }
 .logo {
   font-family: "Raleway";
-  font-weight: var(--font-weight-700);
+  font-weight: var(--font-weight-bold);
   font-size: 26px;
   line-height: 1.2;
-  color: var(--text-color-blue);
+  color: var(--text-color-light-secondary);
 }
 .navigation_logo {
   color: #000000;
 }
 .navigation-secondary {
-  font-weight: var(--font-weight-500);
+  font-weight: var(--font-weight-primary);
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--text-color-black);
+  color: var(--text-color-dark-secondary);
 }
 .navigation-secondary:hover,
 .address:hover {
-  color: var(--text-color-blue);
+  color: var(--text-color-light-secondary);
 }
 .navigation-secondary:focus,
 .address:focus {
-  color: var(--text-color-blue);
+  color: var(--text-color-light-secondary);
 }
 .nav-sec_color {
-  color: var(--text-color-grey);
+  color: var(--text-color-dark-primary)
 }
 .main-primary {
   font-weight: 900;
@@ -60,18 +60,18 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--text-color-white);
+  color: var(--text-color-light-primary)
   background-color: var(--bg-color-dark);
 }
 .pointer {
-  font-weight: var(--font-weight-700);
+  font-weight: var(--font-weight-bold);
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--text-color-white);
+  color: var(--text-color-light-primary);
   background: var(--bg-color-light);
 }
 .section_lorem {
-  font-weight: var(--font-weight-700);
+  font-weight: var(--font-weight-bold);
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -79,11 +79,11 @@ body {
 .sectiom_lorem_p {
   font-size: 14px;
   line-height: 1.71;
-  color: var(--text-color-grey);
+  color: var(--text-color-dark-primary)
 }
 .section_work,
 .team {
-  font-weight: var(--font-weight-700);
+  font-weight: var(--font-weight-bold);
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -92,47 +92,47 @@ body {
   background: #f5f4fa;
 }
 .name {
-  font-weight: var(--font-weight-500);
+  font-weight: var(--font-weight-primary);
 }
 .name,
 .position {
   line-height: 1.19;
-  color: var(--text-color-grey);
+  color: var(--text-color-dark-primary)
   background: #ffffff;
 }
 .foot {
   background: #2f303a;
 }
 .foot_logo {
-  color: var(--text-color-white);
+  color: var(--text-color-light-primary);
 }
 .address {
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
-  color: var(--text-color-white);
+  color: var(--text-color-light-primary);
 }
 .address_color {
   color: rgba(255, 255, 255, 0.6);
 }
 .projects {
-  font-weight: var(--font-weight-700);
+  font-weight: var(--font-weight-bold);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .projects_name {
   line-height: 1.88;
-  color: var(--text-color-grey);
+  color: var(--text-color-dark-primary)
 }
 .all {
-  font-weight: var(--font-weight-500);
+  font-weight: var(--font-weight-primary);
   line-height: 1.62;
   text-align: center;
   background: #f5f4fa;
-  color: var(--text-color-black);
+  color: var(--text-color-dark-secondary);
 }
 .all:focus {
-  color: var(--text-color-white);
+  color: var(--text-color-light-primary);
   background: var(--bg-color-light);
 }
