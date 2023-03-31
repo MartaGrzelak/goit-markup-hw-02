@@ -3,10 +3,12 @@
   --text-color-light-secondary: #2196f3;
   --text-color-dark-primary: #757575;
   --text-color-dark-secondary: #212121;
+  --bg-color-primary: #ffffff;
   --bg-color-light: #2196f3;
   --bg-color-dark: #2f303a;
+  --font-primary: "Roboto", sans-seri;
   --font-weight-bold: 700;
-  --font-weight-primary: 500;
+  --font-weight-medium: 500;
 }
 * {
   margin: 0;
@@ -21,7 +23,7 @@ button {
   cursor: pointer;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-primary);
   color: var(--text-color-dark-secondary);
   letter-spacing: 0.03em;
 }
@@ -36,7 +38,7 @@ body {
   color: #000000;
 }
 .navigation-secondary {
-  font-weight: var(--font-weight-primary);
+  font-weight: var(--font-weight-medium);
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -51,7 +53,7 @@ body {
   color: var(--text-color-light-secondary);
 }
 .nav-sec_color {
-  color: var(--text-color-dark-primary)
+  color: var(--font-weight-medium);
 }
 .main-primary {
   font-weight: 900;
@@ -60,8 +62,8 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--text-color-light-primary)
-  background-color: var(--bg-color-dark);
+  color: var(--text-color-light-primary);
+  background: var(--bg-color-dark);
 }
 .pointer {
   font-weight: var(--font-weight-bold);
@@ -79,7 +81,7 @@ body {
 .sectiom_lorem_p {
   font-size: 14px;
   line-height: 1.71;
-  color: var(--text-color-dark-primary)
+  color: var(--text-color-dark-primary);
 }
 .section_work,
 .team {
@@ -92,16 +94,21 @@ body {
   background: #f5f4fa;
 }
 .name {
-  font-weight: var(--font-weight-primary);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.19;
+  color: var(--text-color-dark-secondary);
 }
+.bg_img,
 .name,
 .position {
+  background: var(--bg-color-primary);
+}
+.position {
   line-height: 1.19;
-  color: var(--text-color-dark-primary)
-  background: #ffffff;
+  color: var(--text-color-dark-primary);
 }
 .foot {
-  background: #2f303a;
+  background: var(--bg-color-dark);
 }
 .foot_logo {
   color: var(--text-color-light-primary);
@@ -123,16 +130,20 @@ body {
 }
 .projects_name {
   line-height: 1.88;
-  color: var(--text-color-dark-primary)
+  color: var(--text-color-dark-primary);
 }
-.all {
-  font-weight: var(--font-weight-primary);
+.all-button {
+  font-weight: var(--font-weight-medium);
   line-height: 1.62;
   text-align: center;
   background: #f5f4fa;
   color: var(--text-color-dark-secondary);
 }
-.all:focus {
+.all-button:focus {
+  color: var(--text-color-light-primary);
+  background: var(--bg-color-light);
+}
+.all-button:hover {
   color: var(--text-color-light-primary);
   background: var(--bg-color-light);
 }
